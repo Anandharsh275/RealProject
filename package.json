@@ -1,0 +1,22 @@
+{
+  "name": "realproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anandharsh275/RealProject.git"
+  },
+  "author": "Harsh Anand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anandharsh275/RealProject/issues"
+  },
+  "homepage": "https://github.com/Anandharsh275/RealProject#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
