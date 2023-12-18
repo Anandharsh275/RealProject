@@ -4,66 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Information Form</title>
-    <h1 class="information">STUDENT DETAIL</h1>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            color:white;
-            background-color: black;
-        }
-        .information{
-            text-align: center;
-            color:#45a049;
-            padding:5px;
-            background-color: skyblue;
-            border-radius: 25%;
-        }
-        form {
-            max-width: 400px;
-            margin: 50px auto;
-          
-        }
+      
+       input[type=text] {
+       width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+       box-sizing: border-box;
+       /* border:none; */
+      
+      }
+      input[type=submit]:focus{
+        background-color: red;
+      }
+      input:focus {
+  background-color:blue;
+}
+            input {
+                width:100%;
+                padding: 6px;
+                border-radius: 25px;
+                border-bottom: 2px solid rgb(235, 135, 135);
+                background-color:silver;
+  color: white;
+            }
+       #Detail{
+        height:150px;
+       }
 
-        label {
-            display: block;
-            margin-bottom: 5px;
-          
-        }
-
-        input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            box-sizing: border-box;
-            border-radius: 34px;
-        }
-
-        input[type="submit"] {
-            background-color: #4caf50;
-            color: white;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
+        /* Other CSS styles remain the same */
+        
     </style>
 </head>
 <body>
 
+    <h1 class="information">STUDENT DETAIL</h1>
+
     <form action="/Submit" method="post">
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required>
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" required><br>
 
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required>
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" required><br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
 
-        <label for="course">Course:</label>
-        <input type="text" id="course" name="course" required>
-
+        <label for="course">Course:</label><br>
+        <input type="text" id="course" name="course" required><br>
+        <label for="Detail">Something About Yourself:</label><br>
+        <input type="text" id="Detail" name="Detail" required><br>
+        <br>
         <input type="submit" value="Submit">
     </form>
 
