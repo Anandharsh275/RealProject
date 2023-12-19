@@ -8,12 +8,15 @@ app.use(express.static(static_path));//mainly used to give allowence for static 
 app.get("", (req, res) => {
     res.render("index")
  });
- app.get("/student", (req, res) => {
-    res.send("Student")
- });
- app.get("/Submit",(req, res) => {
-    res.send("Submit")
- });
+//  app.get("/student", (req, res) => {
+//     res.send("Student")
+//  });
+//  app.get("/teacher", (req, res) => {
+//    res.send("teacher")
+// });
+//  app.get("/Submit",(req, res) => {
+//     res.send("Submit")
+//  });
  app.listen(port,()=>{
     console.log(`listening to the port http://localhost:${port}`)
 })
