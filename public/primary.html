@@ -12,6 +12,7 @@
         margin: 8px 0;
        box-sizing: border-box;
        /* border:none; */
+       color:black;
       
       }
       input[type=submit]:focus{
@@ -20,13 +21,14 @@
       input:focus {
   background-color:blue;
 }   
+
             input {
                 width:100%;
                 padding: 6px;
                 border-radius: 25px;
                 border-bottom: 2px solid rgb(235, 135, 135);
                 background-color:silver;
-  color: white;
+  color: blue;
             }
        #Detail{
         height:150px;
@@ -55,8 +57,14 @@
         <label for="Detail">Something About Yourself:</label><br>
         <input type="text" id="Detail" name="Detail" required><br>
         <br>
-        <input type="submit" value="Submit">
+        <input type="submit"id="submitButton" value="Submit">
+        
     </form>
-
+    <script>
+        document.getElementById('submitButton').addEventListener('click', function() {
+            event.preventDefault(); // You can replace this with any other action you want
+            window.location.href = "/index.html" // Redirect to the home page
+        });
+    </script>
 </body>
 </html>

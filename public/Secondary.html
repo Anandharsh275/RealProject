@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Information Form</title>
+    <style>
+      
+       input[type=text] {
+       width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+       box-sizing: border-box;
+       /* border:none; */
+      
+      }
+      input[type=submit]:focus{
+        background-color: red;
+        
+      }
+      input:focus {
+  background-color:blue;
+}   
+            input {
+                width:100%;
+                padding: 6px;
+                border-radius: 25px;
+                border-bottom: 2px solid rgb(235, 135, 135);
+                background-color:silver;
+  color: blue;
+            }
+       #Detail{
+        height:150px;
+       }
+
+        /* Other CSS styles remain the same */
+        
+    </style>
 </head>
 <body>
-    
+
+    <h1 class="information">STUDENT DETAIL</h1>
+
+    <form action="/Submit" method="post">
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" required><br>
+
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="course">Course:</label><br>
+        <input type="text" id="course" name="course" required><br>
+        <label for="Detail">Something About Yourself:</label><br>
+        <input type="text" id="Detail" name="Detail" required><br>
+        <br>
+        <input type="submit"id="submitButton"value="Submit">
+    </form>
+    <script>
+        document.getElementById('submitButton').addEventListener('click', function() {
+            event.preventDefault();
+            console.log("Done"); 
+            window.location.href = "/index.html" 
+        });
+    </script>
 </body>
 </html>
