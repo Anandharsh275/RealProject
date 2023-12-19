@@ -21,6 +21,27 @@
             text-align: center;
             padding: 10px;
         }
+        #countryCode{
+            font-size: 14px;
+            padding:  6px;
+            width:70px;
+        }
+        #phoneNumber{
+            font-size: 14px;
+            padding:6px;
+            width:180px;
+        }
+        form{
+            margin-left: 200px;
+        }
+        input[type=submit] {
+           margin-left:95px;
+            font-size: 16px;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 34px;
+            background-color: silver;
+        }
     </style>
 </head>
 <body>
@@ -29,8 +50,24 @@
 </br>
 </br>
 </br>
-<h3>Enter your mobile number or Email to logIn</h3>
+<h3>Enter your mobile number to continue</h3></br>
+<form action="/submit" method="post">
+    <label for="countryCode"></label>
+    <select id="countryCode" name="countryCode">
+        <!-- You can populate this list with country codes dynamically or manually -->
+        <option value="91">IND</option>
+        <option value="+1">USA</option>
+        <option value="+44">UK</option>
+       
+        <!-- Add more options as needed -->
+    </select>
+    
+    <label for="phoneNumber"></label>
+    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+</br>
 
+</br>
+    <input type="submit" value="continue">
    <footer>
     Don't have an Account? <span>
         <a href="/signup.html"><button class="signup">sign Up</button></a>
