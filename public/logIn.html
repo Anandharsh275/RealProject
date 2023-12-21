@@ -1,48 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Document</title>
     <style>
-        h2{
+        /* General styles for all screen sizes */
+        h2, h3 {
             text-align: center;
         }
-        h3{
-            text-align: center;
-            color:silver;
+    
+        h3 {
+            color: silver;
         }
-        footer {
-            position: fixed;
-            bottom: 00;
-            width: 100%;
-            background-color:none;
-            color: black;
-            text-align: center;
-            padding: 10px;
+    
+        form {
+            margin-left: 40%;
         }
-        #countryCode{
+    
+        #countryCode {
             font-size: 14px;
-            padding:  6px;
-            width:70px;
+            padding: 6px;
+            width: 70px;
         }
-        #phoneNumber{
+    
+        #phoneNumber {
             font-size: 14px;
-            padding:6px;
-            width:180px;
+            padding: 6px;
+            width: 180px;
         }
-        form{
-            margin-left: 200px;
-        }
-        input[type=submit] {
-           margin-left:95px;
+    
+        .continue {
+            margin-left: 95px;
             font-size: 16px;
             padding: 10px;
             margin-top: 10px;
             border-radius: 34px;
             background-color: silver;
         }
+    
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: none;
+            color: black;
+            text-align: center;
+            padding: 10px;
+        }
+    .signup{
+        margin-right: 50%;
+        border-radius: 34px;
+            background-color: silver;
+    }
+        /* Media query for smaller screens */
+        @media only screen and (max-width: 600px) {
+            form {
+                margin-left: 10%;
+            }
+    
+            #countryCode {
+                width: 100%;
+            }
+    
+            #phoneNumber {
+                width: 100%;
+            }
+    
+            .continue {
+                margin-left: 0;
+            }
+
+        }
     </style>
+    
 </head>
 <body>
    <h2> Login</h2>
@@ -67,7 +99,7 @@
 </br>
 
 </br>
-    <input type="submit" value="continue">
+    <input type="submit"class="continue" value="continue">
    <footer>
     Don't have an Account? <span>
         <a href="/signup.html"><button class="signup">sign Up</button></a>
